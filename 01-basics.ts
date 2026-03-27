@@ -1,14 +1,15 @@
 // console.log("Hello World!")
 
-let userName: string = "Elmer";
-let userAge = 31;
+let userName: string = "Rolando";
+let userAge = 25;
+let courseStudent: string = "BSIS 3RD YEAR";
+let hobbyType : string = "Designing 3d Artist";
 
-// ...
-
-userAge = "31"
 
 console.log(`Username - ${userName}`)
 console.log(`Age - ${userAge}`)
+console.log(`Course - ${courseStudent}`)
+console.log(`Hobby - ${hobbyType}`) 
 
 function add(a: number, b = 5) {
     return a + b
