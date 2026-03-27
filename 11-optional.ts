@@ -3,31 +3,36 @@ function generateError(msg?: string) {
     throw new Error(msg)
 }
 
-generateError("An error occured") // Automatic Semicolon Insertion pitfall - add ; to explicitly tell that this is a function
-// generateError()
-
+//generateError("An error occured") // Automatic Semicolon Insertion pitfall - add ; to explicitly tell that this is a function
+// generateError();
+ 
 
 (() => {
     // Optional Values in object properties
     type User = {
         name: string;
         age: number;
-        role?: 'admin' | 'guess'
+        role: 'admin' | 'guess'
     }
 
     let user: User = {
-        name: 'Elmer',
-        age: 31
+        name: 'Rolando',
+        age: 25,
+        role: 'admin' 
     }
 
-    user.name
-    user.age
-})
+   console.log(user.name)
+   console.log(user.age)
+   console.log(user.role)
+})()
 
 // Nullish Coalescing `??` operator 
 let input = ''
 const didProvideInput = input ?? false;
+console.log(didProvideInput)
 
+const didProvideInput2 = input || false
+console.log(didProvideInput2)
 // try it on browser console log to see results
 // update it `??` to `||`
 // `||` check for falsy not false - falsy = null, undefined, 0, empty string, etc

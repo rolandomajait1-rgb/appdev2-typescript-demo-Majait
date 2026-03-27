@@ -18,4 +18,5 @@ function add(a: number, b = 5) {
 add(10)
 // add('10')
 add(10, 6)
-// add(10, '6')
+console.log(add (10))
+console.log(add(10,6))
