@@ -9,6 +9,17 @@
         Student = 'Student',
     }
 
-    // let userRole: Role = 0;
-    let userRole: Role = Role.SuperAdmin;
-})
+      let userRole: Role;
+
+    userRole = Role.SuperAdmin;
+    console.log(userRole)  // SuperAdmin
+
+    userRole = Role.Teacher;
+    console.log(userRole)  // Teacher
+
+    userRole = Role.Student;
+    console.log(userRole)  // Student
+
+    console.log(Object.values(Role)) // SuperAdmin
+
+})()
