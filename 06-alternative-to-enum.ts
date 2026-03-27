@@ -1,11 +1,16 @@
 (() => {
     // Literal Types (Alternative to Enum)
-    let userRole: 'admin' | 'guess' | 'teacher' | 'student' = 'admin'
+    type Role = 'admin' | 'guess' | 'teacher' | 'student'
 
-    userRole = 'guess'
     // anotherUserRole = 'superadmin'
+    let userRole: Role = 'admin'
+    console.log(userRole)
+ 
+    userRole = 'guess'
+    console.log (userRole)
 
-    function access(role: 'admin' | 'guess' | 'teacher' | 'student') {
-        // ...
+    function access(role: Role ) {
+         console.log(`Access granted for: ${role}`)
     }
-})
+    
+})()
