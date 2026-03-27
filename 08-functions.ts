@@ -6,7 +6,9 @@
     }
 
     add(5, 10)
-    // add("5", 10)
+    add(7, 10)
+    console.log(add(5,10))
+      console.log(add(7,10))
 
     // Special Type `void` - return nothing
     // Function doesn't return a meaningful value, but it does finish
@@ -47,8 +49,8 @@
     }
 
     let user: User = {
-        name: "Elmer",
-        age: 39,
+        name: "Rolando",
+        age: 25,
         // greet: function() {
         //     return this.name
         // }
@@ -59,4 +61,4 @@
     }
 
     user.greet()
-})
+})()
